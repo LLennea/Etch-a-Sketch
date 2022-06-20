@@ -2,12 +2,15 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width", initial-scale="1.0" />
         <title>Etch-a-Sketch</title>
         <link rel="stylesheet" href="/css/style.css">
     </head>
 
     <body>
         <h1>Etch-a-Sketch</h1>
+        <p id="value">Size of grid: 16x16</p>
+        <input type="range" min="4" max="64" value="16" onchange="changeVal(this.value)"></input>
         <div id="grid">
         </div>
         <script src="js/script.js"></script>

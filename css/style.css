@@ -1,0 +1,15 @@
+#grid {
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 320px;
+}
+
+.square {
+    height: 18px;
+    width: 18px;
+    border: solid green 1px;
+    margin: 0;
+    padding: 0;
+}

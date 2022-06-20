@@ -4,12 +4,12 @@
     flex-direction: row;
     flex-wrap: wrap;
     width: 320px;
+    border: solid black 1px;
 }
 
 .square {
-    height: 18px;
-    width: 18px;
-    border: solid green 1px;
+    height: 20px;
+    width: 20px;
     margin: 0;
     padding: 0;
 }

@@ -7,3 +7,10 @@ for (let i=0; i<16; i++) {
         grid.appendChild(square);
     }
 }
+
+let squares = document.querySelectorAll('.square');
+squares.forEach((square => {
+    square.addEventListener('mouseover', () => {
+        square.setAttribute('style', 'background-color: red');
+    })
+}))

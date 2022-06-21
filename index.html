@@ -8,16 +8,27 @@
     </head>
 
     <body>
-        <h1>Etch-a-Sketch</h1>
-        <p id="value">Size of grid: 16x16</p>
-        <input type="range" min="4" max="64" value="16" oninput="changeVal(this.value)" onchange="updateGrid(this.value)"></input>
-        <button onclick="changeColor('black')">Black</button>
-        <button onclick="changeColor('white')">White</button>
-        <button onclick="changeColor('red')">Red</button>
-        <button onclick="changeColor('green')">Green</button>
-        <button onclick="changeColor('blue')">Blue</button>
-        <div id="grid">
+        <div class="header">
+            <h1>Etch-a-Sketch</h1>
+        </div>
+        <div class="body">
+            <div class="options">
+                <div>
+                    <p id="value">Size of grid: 16x16</p>
+                    <input type="range" min="4" max="64" value="16" oninput="changeVal(this.value)" onchange="updateGrid(this.value)"></input>
+                </div>
+                <div class="buttons">
+                    <p>Change Color:</p>
+                    <button class="black" onclick="changeColor('black')">Black</button>
+                    <button class="white" onclick="changeColor('white')">White</button>
+                    <button class="red" onclick="changeColor('red')">Red</button>
+                    <button class="green" onclick="changeColor('green')">Green</button>
+                    <button class="blue" onclick="changeColor('blue')">Blue</button>
+                </div>
+            </div>
+            <div id="grid"></div>
         </div>
         <script src="js/script.js"></script>
+        <div class="footer">Created by Liam Lennea</div>
     </body>
 </html>

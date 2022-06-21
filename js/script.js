@@ -1,5 +1,5 @@
 let grid = document.getElementById('grid');
-const gridSize = 600;
+const gridSize = screen.width / 3;
 let color = 'black';
 grid.style.width = `${gridSize}px`;
 grid.style.height = `${gridSize}px`;

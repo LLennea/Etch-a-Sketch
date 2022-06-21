@@ -1,6 +1,37 @@
-#grid {
-    margin: auto;
+body {
+    background-color: cadetblue;
+}
+
+.header {
+    text-align: center;
+    border-bottom: 1px solid black;
+}
+
+.body {
     display: flex;
+    padding: 30px;
+    align-items: center;
+    justify-content: center;
+}
+
+.options {
+    display: flex;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: column;
+}
+
+#grid {
+    margin-left: 5%;
+    display: flex;
+    flex: none;
     flex-direction: row;
     flex-wrap: wrap;
     border: solid black 1px;
@@ -11,4 +42,39 @@
     width: 20px;
     margin: 0;
     padding: 0;
+}
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    border-top: 1px solid black;
+    padding: 20px;
+    width: 100%;
+    text-align: center;
+}
+
+button {
+    border-radius: 15px;
+    margin: 5px;
+}
+
+.black {
+    border: 2px solid black;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.red {
+    border: 2px solid black;
+    background-color: rgba(255, 0, 0, 0.5);
+}
+
+.green {
+    border: 2px solid black;
+    background-color: rgba(0, 255, 0, 0.5);
+}
+
+.blue {
+    border: 2px solid black;
+    background-color: rgba(0, 0, 255, 0.5);
 }
